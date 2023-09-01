@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #output {
+            margin-top: 20px;
+        }
+        h1{
+            margin-top: 120px;
+        }
+        button{
+            padding: 5px;
+            background-color: rgb(73, 73, 231);
+            color: white;
+             border: none;
+        }
+        button:hover{
+            background-color: rgb(34, 34, 202);
+        }
+        input{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Number Analysis</h1>
+    <div>
+        <label for="numbers">Enter a list of numbers separated by commas:</label> <br> <br>
+        <input type="text" id="numbers"> <br> <br>
+        <button onclick="analyzeNumbers()">Analyze</button>
+    </div>
+    <div id="output">
+        <p>Sum of numbers: <span id="sum"></span></p>
+        <p>Prime numbers: <span id="primeNumbers"></span></p>
+        <p>Non-prime numbers: <span id="nonPrimeNumbers"></span></p>
+        <p>Percentage of prime numbers: <span id="percentage"></span>%</p>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
